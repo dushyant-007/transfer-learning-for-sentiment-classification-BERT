@@ -50,27 +50,27 @@ one layers has 512 nodes and next one has two with softmax activation.
 
 Here are few visuals that helps me understand the bert model more clearly.
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 train_test split details - 20% test set, 16 % val, 64 % train set
 
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
 
 Padding length selection - 
 Shown is the histogram of lengths of a sentence
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
 
 We choose 15 padding length accordingly. 
 
 Getting the tokens using - 
-![img_4.png](img_4.png)
+![images/img_4.png](images/img_4.png)
 and 
-![img_5.png](img_5.png)
+![images/img_5.png](images/img_5.png)
 
 let's have a look at the first three reviews and their corresponding sequences - 
-![img_6.png](img_6.png)
+![images/img_6.png](images/img_6.png)
 
 Observation - So, as can be seen the tokenizer just makes the sentence into dictionary indexes. It is nothing special , there is no machine learning here. However, we should remember that the dictionary indexes here are related to their corresponding embeddings in the trained bert model.
 
@@ -139,18 +139,18 @@ Estimated Total Size (MB): 95.06
 ```
 Learning curves of training and validation set - 
 
-![img_7.png](img_7.png)
+![images/img_7.png](images/img_7.png)
 
-![img_8.png](img_8.png)
+![images/img_8.png](images/img_8.png)
 
 And the final results on the test set - 
 
-![img_9.png](img_9.png)
+![images/img_9.png](images/img_9.png)
 
 
 ## Final Results. 
 
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
 
 the final results looks pretty promising for unknown dataset. 
 
